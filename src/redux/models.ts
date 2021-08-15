@@ -1,3 +1,3 @@
-import counter from './counter';
+import schedule from './schedule';
 
-export { counter };
+export { schedule };
