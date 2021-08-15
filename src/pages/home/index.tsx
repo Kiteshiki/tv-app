@@ -1,17 +1,22 @@
 import React from 'react';
-import { useTranslation } from 'react-i18next';
-import { Counter } from '../../containers/counter';
+import { useAppDispatch, useAppSelector } from '../../hooks';
+import { fetchSchedule } from '../../redux/schedule';
+
 export default function Home(): JSX.Element {
-    const { t } = useTranslation();
+    const dispatch = useAppDispatch();
+    const { programs } = useAppSelector((state) => state.schedule);
+
+    React.useEffect(() => {
+        dispatch(fetchSchedule());
+    }, []);
+
     return (
         <div style={{ justifyContent: 'center', flexDirection: 'column', alignItems: 'center', display: 'flex' }}>
-            <h1>{t('title')}</h1>
-            <h2>{t('subtitle')}</h2>
-            <Counter />
-            <p>
-                Remove the content from
-                <code> src/page/home</code> and start working !
-            </p>
+            <ol>
+                {programs.map((program) => (
+                    <li key={program.id}>{program.title}</li>
+                ))}
+            </ol>
         </div>
     );
 }
