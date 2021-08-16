@@ -1,0 +1,39 @@
+.videoRow {
+    position: relative;
+    padding: 20px 0;
+}
+
+.videoRowTitle {
+    margin-top: 0;
+}
+
+.videoRowList {
+    display: flex;
+    grid-column-gap: 20px;
+    max-width: 100%;
+    overflow-x: auto;
+    padding-bottom: 10px;
+}
+
+@media screen and (max-width: 767px) {
+    .videoRowList {
+        grid-column-gap: 10px
+    }
+}
+
+.videoRowLoading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 295px;
+}
+
+.videoRowEmpty {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 295px;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #333;
+}

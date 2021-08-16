@@ -7,6 +7,7 @@ import { Route, Switch } from 'react-router-dom';
 import i18next from './configs/i18n';
 import ROUTES from './constants/routes';
 import Home from './pages/home';
+import VOD from './pages/vod';
 import store, { history } from './redux';
 import './styles/index.css';
 
@@ -17,6 +18,7 @@ ReactDOM.render(
                 <I18nextProvider i18n={i18next}>
                     <Switch>
                         <Route exact path={ROUTES.home} component={Home} />
+                        <Route exact path={ROUTES.vod} component={VOD} />
                     </Switch>
                 </I18nextProvider>
             </Router>

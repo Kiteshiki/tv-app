@@ -1,3 +1,4 @@
-import Program from './Program';
+import Program from './program';
+import VOD from './vod';
 
-export type { Program };
+export type { Program, VOD };

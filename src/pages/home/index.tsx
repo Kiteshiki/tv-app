@@ -1,22 +1,14 @@
 import React from 'react';
-import { useAppDispatch, useAppSelector } from '../../hooks';
-import { fetchSchedule } from '../../redux/schedule';
+
+import Schedule from '../../containers/schedule';
+import VOD from '../../containers/vod';
+import styles from './style.module.css';
 
 export default function Home(): JSX.Element {
-    const dispatch = useAppDispatch();
-    const { programs } = useAppSelector((state) => state.schedule);
-
-    React.useEffect(() => {
-        dispatch(fetchSchedule());
-    }, []);
-
     return (
-        <div style={{ justifyContent: 'center', flexDirection: 'column', alignItems: 'center', display: 'flex' }}>
-            <ol>
-                {programs.map((program) => (
-                    <li key={program.id}>{program.title}</li>
-                ))}
-            </ol>
+        <div className={styles.wrapper}>
+            <Schedule />
+            <VOD />
         </div>
     );
 }

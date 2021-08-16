@@ -2,6 +2,7 @@
 
 const ROUTES = {
     home: '/',
+    vod: '/vod/:id',
 };
 
 export default ROUTES;

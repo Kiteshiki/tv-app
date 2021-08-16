@@ -1,0 +1,7 @@
+.vodWrapper {
+    position: relative;
+    max-width: 800px;
+    width: 100%;
+    padding: 40px 15px;
+    margin: 0 auto;
+}
