@@ -1,7 +1,6 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import { Program } from '../../types';
 import http from '../../utils/http';
-import { fetchVod } from '../vod';
 
 export const fetchSchedule = createAsyncThunk(
     'schedule/fetchSchedule',
