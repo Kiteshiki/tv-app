@@ -1,4 +1,7 @@
 {
-    "title": "Pack de démarrage React Redux Typescript",
-    "subtitle": "Voiçi un simple compteur redux"
+  "title": "Pack de démarrage React Redux Typescript",
+  "subtitle": "Voiçi un simple compteur redux",
+  "scheduleTitle": "Schedule (fr)",
+  "vodTitle": "Videos on demand (fr)",
+  "emptyText": "Nothing to show (fr)"
 }

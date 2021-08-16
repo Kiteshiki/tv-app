@@ -1,4 +1,7 @@
 {
-    "title": "React Redux Typescript Boiler Plate",
-    "subtitle": "Here is a simple redux counter"
+  "title": "TV-app",
+  "subtitle": "Here is a simple redux counter",
+  "scheduleTitle": "Schedule",
+  "vodTitle": "Videos on demand",
+  "emptyText": "Nothing to show"
 }
